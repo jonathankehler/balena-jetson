@@ -26,6 +26,11 @@ do_configure_prepend_srd3-tx2(){
 SRC_URI_append = " \
     file://0001-revert-random-fix-crng_ready-test.patch \
     file://0001-Support-referencing-the-root-partition-label-from-GP.patch \
+    file://cti_agx101_hardware.patch \
+    file://6_streaming_IMX577_fp_sync_base32.3.1_Xavier_dts_20200215.patch \
+    file://cti_agx101_6xIMX577.patch \
+    file://cti_agx101_kernel.patch \
+    file://6_streaming_IMX577_fp_sync_base32.3.1_Xavier_kernel_20200226.patch \
 "
 SRC_URI_append_jetson-tx2 = " \
     file://0001-Expose-spidev-to-the-userspace.patch \
